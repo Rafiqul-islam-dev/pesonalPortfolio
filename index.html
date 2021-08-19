@@ -9,7 +9,18 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/font-awesome.css">
     <link rel="stylesheet" href="./css/skins/color-1.css">
+    <link rel="stylesheet" href="./css/style-switcher.css">
     <!--Css -->
+    <!---style theme color-->
+    <link rel="stylesheet" class="alternate-style" title="color-1" href="css/skins/color-1.css" >
+    <link rel="stylesheet" class="alternate-style" title="color-2" href="css/skins/color-2.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-3" href="css/skins/color-3.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-4" href="css/skins/color-4.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="color-5" href="css/skins/color-5.css" disabled>
+    <!---responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+
     <title>Rafiqul Islam</title>
 </head>
 
@@ -144,7 +155,8 @@
                         opposed to using 'Content here, </p>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour</p>
-                    <a href="image/Rafiqul_Islam.pdf" target="_blank" class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
+                    <a href="image/Rafiqul_Islam.pdf" target="_blank"
+                        class="btn-1 outer-shadow hover-in-shadow">Download CV</a>
                     <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Hire Me</a>
                 </div>
             </div>
@@ -688,7 +700,7 @@
             <!---Portfolio items End--->
         </div>
     </section>
-    
+
     <!---Portfolio End--->
 
     <!---Testmonial part start----->
@@ -707,15 +719,18 @@
                             <div class="testi-item">
                                 <i class="fas fa-quote-left left"></i>
                                 <i class="fas fa-quote-right right"></i>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste error quisquam reprehenderit quae! Id voluptates
-                                    sint consequatur labore exercitationem fugit voluptas officiis magni accusantium, sapiente laboriosam assumenda
-                                    inventore veniam atque aliquam quod quas repudiandae iste vero. Reiciendis alias tempora maiores similique libero
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum iste error quisquam
+                                    reprehenderit quae! Id voluptates
+                                    sint consequatur labore exercitationem fugit voluptas officiis magni accusantium,
+                                    sapiente laboriosam assumenda
+                                    inventore veniam atque aliquam quod quas repudiandae iste vero. Reiciendis alias
+                                    tempora maiores similique libero
                                     aliquam, perspiciatis non, ipsa optio eos ut.</p>
                                 <img src="image/testimonial/1.png" alt="">
                                 <span>Rafiqul islam</span>
                             </div>
                             <!---testi item end---->
-                            
+
                         </div>
                     </div>
                     <div class="testi-slider-nav">
@@ -805,28 +820,11 @@
         <div class="pp-details">
             <div class="pp-details-inner">
                 <div class="pp-title">
-                    <h2>personal portfolio</h2>
-                    <p>Category - <span class="pp-project-category">Web Application</span></p>
+                    <h2></h2>
+                    <p>Category - <span class="pp-project-category"></span></p>
                 </div>
                 <div class="pp-project-details">
-                    <div class="row">
-                        <div class="description">
-                            <h3>project Brief:</h3>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae saepe magni explicabo
-                                rerum deserunt nemo placeat similique, animi, ullam minima cumque facilis distinctio
-                                quam libero odit mollitia, architecto numquam inventore provident vel optio unde id fuga
-                                recusandae! Obcaecati, illum voluptates!</p>
-                        </div>
-                        <div class="info">
-                            <h3>Project info</h3>
-                            <ul>
-                                <li>Date - <span>2020</span></li>
-                                <li>Clien - <span>xyz</span></li>
-                                <li>Tools - <span>flutter, firebase</span></li>
-                                <li>Web - <span>www.name.com</span></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -837,7 +835,7 @@
                         class="fas fa-plus"></i></div>
                 <div class="pp-close outer-shadow hover-in-shadow">&times;</div>
                 <img src="image/portfolio/large/project-1/1.png" class="pp-img outer-shadow" alt="">
-                <div class="pp-counter">1 of 6</div>
+                <div class="pp-counter"></div>
             </div>
             <div class="pp-loader">
                 <div></div>
@@ -850,6 +848,24 @@
     <!--portfolio popup end-->
 
 
+    <!---Stytle switech start-->
+    <div class="style-switcher outer-shadow">
+        <div class="style-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!---Stytle switech end-->
 
 
 
@@ -858,6 +874,7 @@
 
     <!---Javascript----->
     <script src="js/main.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 
 </html>

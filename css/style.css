@@ -19,6 +19,20 @@ fonts
   --inner-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
   --inner-shadow-0: inset 0px 0px 0px #d0d0d0, inset 0px 0px 0px #f8f8f8;
 }
+/*======dark==========*/
+body.dark{
+  --bg-black-900: #ffffff;
+  --bg-black-100: #353535;
+  --bg-black-50: #2b2c2f;
+  --bg-opacity: rgba(43,44,47,0.effect-5);
+  --text-black-900: #ffffff;
+  --text-black-700: #ffffff;
+  --text-black-600: #bbbbbb;
+  --outer-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  --outer-shadow-0: 0 0 0 #222327, 0 0 0 #363636;
+  --inner-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
+  --inner-shadow-0: inset 0px 0px 0px #222327, inset 0px 0px 0px #363636;
+}
 body {
   font-size: 16px;
   line-height: 1.5;
@@ -694,6 +708,7 @@ service section
   display: block;
   margin: 0 auto 30px;
   position: relative;
+  color: var(--text-black-600);
 }
 .service-section .service-item-inner .icon::after {
   content: "";
@@ -1122,6 +1137,9 @@ contract section
   max-width: 33.33%;
   padding: 15px;
 }
+.submit-btn .btn-1 {
+    background: transparent;
+}
 .contact-section .contact-item-inner {
   padding: 30px 15px;
   text-align: center;
@@ -1187,3 +1205,4 @@ contract section
   text-align: right;
   padding: 0 15px;
 }
+
