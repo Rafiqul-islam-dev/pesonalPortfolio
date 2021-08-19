@@ -26,20 +26,23 @@
   document.addEventListener("click", (event) => {
     if (event.target.classList.contains("link-item")) {
       if (event.target.hash !== "") {
+        console.log(event.target);
         event.preventDefault();
-
         const hash = event.target.hash;
+        //deactive section
         document.querySelector(".section.active").classList.add("hide");
         document.querySelector(".section.active").classList.remove("active");
-
+        //active new section
         document.querySelector(hash).classList.add("active");
         document.querySelector(hash).classList.remove("hide");
-        navMenu
-          .querySelector(".active")
-          .classList.add("outer-shadow", "hover-in-shadow");
-        navMenu
-          .querySelector(".active")
-          .classList.remove("active", "inner-shadow");
+        //deactive existing activ navigation menu link-item
+        navMenu.querySelector(".active").classList.add("outer-shadow", "hover-in-shadow");
+        navMenu.querySelector(".active").classList.remove("active", "inner-shadow");
+        
+        //active new navigation menu 'link-tem'
+          event.target.classList.add("active", "inner-shadow");
+          event.target.classList.remove("outer-shadow", "hover-in-shadow");
+          hideNavMenu();
         if (navMenu.classList.contains("open")) {
           event.target.classList.add("active", "inner-shadow");
           event.target.classList.remove("outer-shadow", "hover-in-shadow");
@@ -47,13 +50,14 @@
         } else {
           let navItems = navMenu.querySelectorAll(".link-item");
           navItems.forEach((item) => {
-            if (hash === item.has) {
+            if (hash === item.hash) {
               item.classList.add("active", "inner-shadow");
-              item.target.classList.remove("outer-shadow", "hover-in-shadow");
+              item.classList.remove("outer-shadow", "hover-in-shadow");
             }
           });
           fadeOutEffect();
         }
+        window.location.hash = hash;
       }
     }
   });
@@ -277,7 +281,7 @@ function bodyScrollingToggle() {
 
 (() => {
   const sections = document.querySelectorAll(".section");
-  // console.log(sections);
+  console.log(sections);
   sections.forEach((section) => {
     if (!section.classList.contains(".active")) {
       section.classList.add("hide");
