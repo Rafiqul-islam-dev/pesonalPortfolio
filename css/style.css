@@ -524,6 +524,7 @@ About section
   font-weight: 500;
   text-transform: capitalize;
   transition: all 0.3s ease;
+  color: var(--text-black-600);
 }
 .about-section .about-tabs .tab-item:hover:not(.active) {
   opacity: 0.6;
